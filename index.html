@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Favorite Things</title>
+    <title>Groceries</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -11,10 +11,26 @@
   </head>
   <body>
     <div class="container">
-
-
-
-      
+      <h1>Groceries List</h1>
+          <form id="formOne">
+            <div class="form-group">
+              <label for="inputItem">Items:</label>
+              <input class="form-control" type="text" id="inputItem">
+            </div>
+            <button class="btn btn-success" type="submit">Add Item</button>
+          </form>
+          <button class="btn btn-danger" type="button" id="sortingButton">View Sorted List</button>
+          <div class="row">
+            <div class="col-6">
+              <p>Unsorted Items</p>
+              <ul id="unsortedList"></ul>
+            </div>
+            <div class="col-6">
+              <p>Sorted Items</p>
+              <ul id="sortedList">
+              </ul>
+            </div>
+          </div>
     </div>
   </body>
 </html>
